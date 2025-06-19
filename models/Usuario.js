@@ -32,8 +32,8 @@ const usuarioSchema = new mongoose.Schema({
   },
   rol: {
     type: String,
-    enum: ['cliente', 'admin', 'super_admin'],
-    default: 'cliente'
+    enum: ['user', 'admin', 'super_admin'],
+    default: 'user'
   }
 }, { timestamps: true });
 
